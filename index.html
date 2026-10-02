@@ -103,6 +103,7 @@
 
             <fieldset>
                 <legend>Hábitos:</legend>
+                
                 <p>Redes Sociais:</p>
                 <input id="facebook" type="checkbox" name="social" value="facebook">
                 <label for="facebook">Facebook</label>
@@ -115,11 +116,60 @@
                 <br>
                 <input id="x" type="checkbox" name="social" value="x">
                 <label for="x">X</label>
+                <br>
+                <label for="musicalStyle">Estilo musical:</label>
+                <input id="musicalStyle" name="useMusicalStyle" type="text" list="styleType">
+                <datalist id="styleType">
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Sertanejo">Sertanejo</option>
+                    <option value="Funk">Funk</option>
+
+                </datalist>
+                <br>
+                <label for="favoriteColor">Cor favorita:</label>
+                <input id="favoriteColor" name="useFavoriteColor" type="color">
+                <br>
+                
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Comentários</legend>
+                <p>O que você acha da qualidade do nosso serviço?</p>
+                <br>
+                <input id="feedbackOtimo" type="radio" name="userFeedback" value="otimo">
+                <label for="feedbackOtimo">Ótimo!</label>
+                <br>
+                <input id="feedbackBom" type="radio" name="userFeedback" value="bom">
+                <label for="feedbackBom">Bom</label>
+                <br>
+                <input id="feedbackNeutro" type="radio" name="userFeedback" value="neutro">
+                <label for="feedbackNeutro">Neutro</label>
+                <br>
+                <input id="feedbackRuim" type="radio" name="userFeedback" value="ruim">
+                <label for="feedbackRuim">Ruim</label>
+                <br>
+                <input id="feedbackPessimo" type="radio" name="userFeedback" value="pessimo">
+                <label for="feedbackPessimo">Péssimo!</label>
+                <br>
+                <p>Deixe sua opinião mais detalhada no campo abaixo:</p>
+                <textarea name="mensagem" rows="6" cols="50" placeholder="Digite seu texto aqui..."></textarea>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Confirmações</legend>
+                <input id="lgpdTerm" type="checkbox" name="userLgpdTerm" value="accepted" required>
+                <label for="lgpdTerm">Eu aceito participar da pesquisa</label>
+                <br>
+                <input id="result" type="checkbox" name="userResult" value="accepted" required>
+                <label for="result">Eu desejo receber os resultados da pesquisa por e-mail</label>
 
             </fieldset>
 
             <br>
             <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
 
         </form>
     </section>
